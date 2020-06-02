@@ -1,0 +1,18 @@
+<div class="heartbeat btn">
+    <div [ngClass]="
+            {
+                'text-dark': heartbeat===true && databaseheartbeat===true, 
+                'text-danger': heartbeat===false && databaseheartbeat===true, 
+                'text-warning': databaseheartbeat===false
+            }">
+        <i class="h4 fas" [ngClass]="
+                {
+                    'fa-heart text-success': (heartbeat===true && databaseheartbeat===true), 
+                    'fa-heart-broken text-danger': (heartbeat===false && databaseheartbeat===true),
+                    'fa-question-circle text-warning': (databaseheartbeat===false)
+                }"></i>
+        <span class="h4">
+            Server health
+        </span>
+    </div>
+</div>

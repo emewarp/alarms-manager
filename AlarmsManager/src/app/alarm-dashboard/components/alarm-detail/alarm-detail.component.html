@@ -1,0 +1,65 @@
+<div class="alarmDetail alert alert-dismissible fade show border-by-severity" 
+[@selectedState]="selectedState" [ngClass]="alertSelected">
+    <!-- alertType of trigered alarm -->
+    <h3 class="alertType">
+        <div>
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>
+                {{ detail.alertType }}
+            </span>
+        </div>
+
+    </h3>
+    <table class="table table-borderless">
+        <tbody>
+            <tr>
+                <td>
+                    <!-- starting time of the alarm -->
+                    <span class="startTime" data-toggle="tooltip" data-placement="top" title="Start datetime">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>
+                            {{ detail.startTime | date: 'dd/MM/yy, HH:mm' }}
+                        </span>
+                    </span>
+                </td>
+                <td>
+                    <!-- ending time of the alarm -->
+                    <span class="endTime" data-toggle="tooltip" data-placement="top" title="Latitude, Longitude">
+                        <i class="fas fa-calendar-times"></i>
+                        <span>
+                            {{ detail.endTime | date: 'dd/MM/yy, HH:mm' }}
+                        </span>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- kilometer point where the alarm happens -->
+                    <span class="km" data-toggle="tooltip" data-placement="top" title="End datetime">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>
+                            {{ detail.startLatitude | number:'1.0-4' }} , {{ detail.startLongitude |
+                            number:'1.0-4' }}
+                        </span>
+                    </span>
+                </td>
+                <td>
+                    <!-- speed of the item -->
+                    <div class="scalePoint" data-toggle="tooltip" data-placement="top" title="Km. point">
+                        <i class="fas fa-map-pin"></i>
+                        <span>
+                            Km. {{ detail.scalePoint || 'n/a'}}
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button (click)="onOpenCamera()" class="btn" alertType="button" [ngClass]="buttonSelected">
+        <i class="fas fa-video"></i>
+        <span>Open Camera</span>
+    </button>
+    <button (click)="onRemoveAlarm()" class="close" alertType="button" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

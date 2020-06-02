@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="alarm-heartbeat col-md-8">
+            <alarm-heartbeat></alarm-heartbeat>
+        </div>
+
+        <div class="text-right col-md-4 text-dark">
+            <button (click)="onRemoveAll()" class="btn btn-link text-dark" type="button" *ngIf="alarmsLength > 0">
+                <span>
+                    <i class="fas fa-trash"></i>
+                    Clear All ({{ alarmsLength }})
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="d-block rounded p-3 scrollDiv content" *ngIf="alarmsLength > 0; else noalarms">
+        <div *ngFor="let alarm of alarms">
+            <alarm-detail [detail]="alarm" [kmRangeAlarm]="kmRange" (removeAlarm)="handleRemoveAlarm($event)"
+                (openCamera)="handleOpenCamera($event)" class="alarm">
+            </alarm-detail>
+        </div>
+    </div>
+
+    <ng-template #noalarms>
+        <div class="content d-block bg-dark rounded p-3 text-white">
+            <p>
+                <i class="fas fa-bell-slash"></i>
+                No alarms
+            </p>
+        </div>
+    </ng-template>
+</div>

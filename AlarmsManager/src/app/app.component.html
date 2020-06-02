@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+        <h1 class="navTitle text-dark">{{title}}</h1>
+        <div class="ml-auto navTitle">
+            <span class="text-dark">v1.0</span>
+        </div>
+    </nav>
+    <hr class="bg-dark"/>
+    <div class="row">
+        <div class="col-md-12 col-lg-7">
+            <div class="navy">
+                <div class="content">
+                    <livevideo-dashboard [kmPoint]="kmPointDto" (tileHasChanged)="handleTileChanged($event)"></livevideo-dashboard>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-5">
+            <div class="light">
+                <div class="content">
+                    <alarm-dashboard [kmRange]="kmRangeDto" (openCamera)="handleOpenCamera($event)"></alarm-dashboard>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

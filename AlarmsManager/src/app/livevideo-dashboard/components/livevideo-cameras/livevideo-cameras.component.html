@@ -1,0 +1,4 @@
+<button *ngFor="let camera of cameraList;" (click)="onOpenCamera(camera)" class="btn btn-link" type="button">
+    <i class="fas fa-video"></i>
+    <span>{{ camera.name }}</span>
+</button>

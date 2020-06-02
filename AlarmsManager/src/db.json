@@ -1,0 +1,68 @@
+{
+  "alarms": [
+    {
+      "alertId": "088695432",
+      "scalePoint": "1.5",
+      "startLatitude": 48.721765999933496,
+      "startLongitude": 5.286650718087815,
+      "endLatitude": 48.721765999933496,
+      "endLongitude": 5.286650718087815,
+      "alertType": "Rock Fall",
+      "startTime": "1547488980000",
+      "endTime": "1547488981000",
+      "speed": "0.0(m/s)",
+      "alertLevel": "low",
+      "id": 1
+    },
+    {
+      "alertId": "55132@LESL170900087.1547489404034.0",
+      "scalePoint": "5.2",
+      "startLatitude": 48.75073170028401,
+      "startLongitude": 5.40623212104835,
+      "endLatitude": 48.75073170028401,
+      "endLongitude": 5.40623212104835,
+      "alertType": "Vehicle",
+      "startTime": "1547488980000",
+      "endTime": "1547488981000",
+      "speed": "0.0(m/s)",
+      "alertLevel": "medium",
+      "id": 2
+    }
+  ],
+  "cameras": [
+    {
+      "id": 1,
+      "name": "Camera 1",
+      "url": "http://72.48.231.13/mjpg/video.mjpg",
+      "startingKmPoint": 0,
+      "endingKmPoint": 4.99
+    },
+    {
+      "id": 2,
+      "name": "Camera 2",
+      "url": "https://timelapse.skylinewebcams.com/5ed6018af408az181.mp4",
+      "startingKmPoint": 5,
+      "endingKmPoint": 9.99
+    },
+    {
+      "id": 3,
+      "name": "Camera 3",
+      "url": "http://72.48.231.13/mjpg/video.mjpg",
+      "startingKmPoint": 10,
+      "endingKmPoint": 14.99
+    },
+    {
+      "id": 4,
+      "name": "Camera 4",
+      "url": "http://72.48.231.13/mjpg/video.mjpg",
+      "startingKmPoint": 15,
+      "endingKmPoint": 20
+    }
+  ],
+  "heartbeats": [
+    {
+      "id": 1,
+      "heartbeatMessage": 1
+    }
+  ]
+}

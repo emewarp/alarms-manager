@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="d-block p-3">
+        <!-- to be aligned with clear all -->
+    </div>
+    <div>
+        <livevideo-tile [camera]="selectedCamera" (tileChanged)="handleTileChanged($event)"></livevideo-tile>
+    </div>
+    <div class="text-center">
+        <livevideo-cameras [cameraList]="cameras" (openCamera)="handleOpenCamera($event)"></livevideo-cameras>
+    </div>
+</div>
