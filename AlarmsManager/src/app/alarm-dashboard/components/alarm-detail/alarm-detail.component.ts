@@ -61,7 +61,7 @@ export class AlarmDetailComponent implements OnChanges {
   }
 
   ngOnChanges(): void {
-    if (this.detail.scalePoint >= this.kmRangeAlarm.startKmPoint && this.detail.scalePoint <= this.kmRangeAlarm.endKmPoint) 
+    if (this.detail.km >= this.kmRangeAlarm.startKmPoint && this.detail.km <= this.kmRangeAlarm.endKmPoint) 
       this.selectedState=this.detail.alertLevel;
     else       
       this.selectedState="white";            

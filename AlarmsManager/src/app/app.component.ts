@@ -19,7 +19,7 @@ kmPointDto: KmPointDto = {} as KmPointDto;
 kmRangeDto: KmRangeDto = {} as KmRangeDto;
 
 handleOpenCamera(event: Alarm){   
-  var dto = { km: event.scalePoint} as KmPointDto;
+  var dto = { km: event.km} as KmPointDto;
   this.kmPointDto = Object.assign(dto);
 }
 

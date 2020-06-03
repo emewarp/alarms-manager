@@ -1,7 +1,7 @@
 export interface Alarm{
     id: string;
     alertId : string;
-    scalePoint : number;
+    km : number;
     startLatitude: number;
     startLongitude: number;
     endLatitude: number;
@@ -9,6 +9,5 @@ export interface Alarm{
     alertType : string;
     startTime : string;
     endTime : string;
-    speed : number;
     alertLevel : string;
 }

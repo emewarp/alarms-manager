@@ -1,6 +1,6 @@
 {
-  "name": "ismlite",
-  "version": "0.0.0",
+  "name": "alarmsmanager",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "json-server": "json-server --watch src/db.json",
     "webapp": "ng serve",
-    "ismlite": "concurrently — kill-others \"npm run json-server\" \"npm run webapp\""
+    "alarmsmanager": "concurrently — kill-others \"npm run json-server\" \"npm run webapp\""
   },
   "private": true,
   "dependencies": {

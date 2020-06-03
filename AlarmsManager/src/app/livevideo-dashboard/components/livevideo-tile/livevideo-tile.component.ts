@@ -16,19 +16,10 @@ export class LivevideoTileComponent implements OnInit, OnChanges, AfterViewInit 
   constructor(private hostElement: ElementRef) {
   }
 
-  // Titulo do component
-  // title = 'Player com Video.JS';
-  // // Instancia do video.js.
-  // vidObj: any;
-  // // Poster para ser usado no video.js
   poster = 'assets/img/picture.png';
-  // URL do video a ser reproduzido.
-  //videoUrl = 'http://ismlite@iscals1!@192.168.20.120/ISAPI/Streaming/channels/101/httppreview';
   videoUrl = 'http://72.48.231.13/mjpg/video.mjpg';
   
-  // Acessa o elemento video do html5 via viewchild.
   @ViewChild('myvid') vid: ElementRef;
-
 
   @Input()
   camera: Camera;
@@ -39,13 +30,6 @@ export class LivevideoTileComponent implements OnInit, OnChanges, AfterViewInit 
   tileChanged: EventEmitter<Camera> = new EventEmitter();
 
   ngAfterViewInit() {
-    // const options = {
-    //   controls: true,
-    //   autoplay: true,
-    //   preload: 'auto',
-    //   hasCredentilas:true,
-    //   techOrder: ['html5']
-    // };
 
   }
 

@@ -2,7 +2,7 @@
   "alarms": [
     {
       "alertId": "088695432",
-      "scalePoint": "1.5",
+      "km": "1.5",
       "startLatitude": 48.721765999933496,
       "startLongitude": 5.286650718087815,
       "endLatitude": 48.721765999933496,
@@ -10,13 +10,12 @@
       "alertType": "Rock Fall",
       "startTime": "1547488980000",
       "endTime": "1547488981000",
-      "speed": "0.0(m/s)",
       "alertLevel": "low",
       "id": 1
     },
     {
       "alertId": "55132@LESL170900087.1547489404034.0",
-      "scalePoint": "5.2",
+      "km": "5.2",
       "startLatitude": 48.75073170028401,
       "startLongitude": 5.40623212104835,
       "endLatitude": 48.75073170028401,
@@ -24,7 +23,6 @@
       "alertType": "Vehicle",
       "startTime": "1547488980000",
       "endTime": "1547488981000",
-      "speed": "0.0(m/s)",
       "alertLevel": "medium",
       "id": 2
     }
