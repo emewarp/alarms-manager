@@ -1,27 +1,13 @@
-# Alarms Manager
+# Alarms Manager App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
+## Main behaviour description
 
-## Development server
+This app represents a surveillance system managing the inputs of incoming alarms by
+1. Representing them in a display. 
+2. Linking them to the live-stream of the camera associated to the location where the alarm was raised.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Each alarm is displayed being identified by name, time and location (lat, long & km), where the km is the common factor to the camera-alarm relation.
 
-## Code scaffolding
+## Additional functionalities
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Alarms Manager App is also available to inform about the Alarm Raiser-System Health (in case this one is available to provide it) through a heartbeat pulse.
