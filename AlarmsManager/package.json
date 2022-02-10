@@ -30,7 +30,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "hls.js": "^0.12.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "rxjs": "~6.3.3",
     "video.js": "^7.4.1",
     "zone.js": "~0.8.26"
